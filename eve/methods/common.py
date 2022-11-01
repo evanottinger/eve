@@ -757,7 +757,7 @@ def resolve_data_relation_links(document, resource):
         if (
             field in document
             and document[field] is not None
-            and document[field] is not []
+            and document[field] != []
         ):
             related_links = []
 
